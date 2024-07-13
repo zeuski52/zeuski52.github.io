@@ -1,0 +1,163 @@
+/* Chris Szabla 9001341 */ 
+html {
+    font: normal normal 500 20px/1.25 Helvetica, Arial, sans-serif;   
+    background-color:rgb(126, 93, 52);
+}
+
+body{
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto;
+    border: .25rem solid black;
+    border-radius: 1rem;
+    background-color: bisque;
+    font-size: .90rem;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    border: .25rem solid black;
+    border-radius: 1rem;
+    background-color:brown;
+    box-sizing: border-box;
+}
+
+#Main {
+    float: left;
+    width: 70%;   
+    box-sizing: border-box;
+}
+
+#Aside {
+    float: left;
+    width: 30%;
+    padding: 1rem;
+    border: .25rem solid black;
+    border-radius: 1rem;
+    background-color:brown;
+    box-sizing: border-box;
+}
+
+#Footer {
+    clear: both;
+    padding: 1rem;
+    border: 0.25rem solid black;
+    border-radius: 1rem;
+    background-color:brown;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: .8em;
+    
+}
+
+#Biography {
+    float: left;
+    width: 50%;   
+    box-sizing: border-box;
+     
+}
+
+#FigureWithCaption{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    font-weight: bold;
+    font: normal normal bold 1rem 'helvetica', 'Calibri', 'sans-serif';
+}
+
+#Quote {
+    max-width: 95%;
+    clear: both;
+    border: .25rem solid black;
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem .25rem rgba(68, 17, 17, 0.863);
+    text-align: center;
+    background-image: linear-gradient(to bottom, bisque 10%, rgb(230, 176, 112) 90%);
+}
+a:visited{
+    color:rgb(255, 195, 67);
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    font-weight: bolder;
+    color: black;
+}
+
+label {
+    font: small-caps normal 400 .85rem 'helvetica', 'Calibri', 'sans-serif';
+    Color: rgb(255, 195, 67);
+    text-align: left;
+}
+
+textarea[required][placeholder], label[required][placeholder]{
+    font-weight: 100;
+}
+
+figure {
+    border: .25rem solid black;
+    border-radius: 1rem;
+    padding: .25rem;
+    text-align: center;
+    width: 77%;
+    background-color:brown;
+}
+
+figure > img{
+    border: .25rem solid black;
+    border-radius: 5%;
+}
+
+figure > figcaption {
+    font-size: .75rem;   
+}
+
+q {
+    font: normal italic normal 1em/1.25 Helvetica, Arial, sans-serif;
+}
+
+textarea, input, select {
+    background-color: rgb(233, 225, 225);
+    width:12rem;
+    align-items: left;
+}
+
+textarea {
+    height: 10rem;
+}
+h1 {
+    text-align: center;
+    font: small-caps normal bold 3em/1.25 'helvetica', 'Calibri', 'sans-serif';
+    color: rgb(255, 195, 67);
+}
+
+h2 {
+    text-align: center;
+    font: small-caps normal bold 1.5em/1.25 'helvetica', 'Calibri', 'sans-serif';
+    color:brown;
+}
+
+h3 {
+    text-align: center;
+    font: small-caps normal bold 1.5em/1.25 'helvetica', 'Calibri', 'sans-serif';
+    color: rgb(255, 195, 67);
+}
+
+aside section {
+    line-height: 1rem;
+}
+
+iframe {
+    border: .25rem solid black;
+    border-radius: 1rem;  
+}
+
+ul {
+    line-height: 1.5;
+    list-style-type: none;
+}

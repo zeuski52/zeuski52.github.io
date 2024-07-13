@@ -1,5 +1,6 @@
 <!-- Name: Chris Szabla -->
 <!-- Student Number: 9001341 -->
+
 <!DOCTYPE html>
 <html lang="en">
     
@@ -11,24 +12,27 @@
         <meta name="keywords" content="Darwin, Charles, Theory of evolution, evolution, natural selection">
         <meta name="description" content="This site is about the life of Charles Darwin">
         
-        <title>The Life of Charles Darwin</title>
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="css/styles.css"> 
 
+        <title>The Life of Charles Darwin</title>
+        
     </head>
 
 <!-- Body of web page -->
 
-    <body>
+    <body id="Body">
 
 <!-- Main header for website including navigation to all other sections -->
 
-        <header>
+        <header id="Header">
             <h1> The life of Charles Darwin </h1>
-            <a href="#biography">Biography</a>&nbsp;|&nbsp;<a href="#Figure with Caption">Photos</a>&nbsp;|&nbsp;<a href="#Quote">Famous Quote</a>&nbsp;|&nbsp;<a href="#Video">video</a>&nbsp;|&nbsp;<a href="#Resources">Resources</a>&nbsp;|&nbsp;<a href="#Contact Me">Contact Form</a>
+            <a href="#biography">Biography</a>&nbsp;|&nbsp;<a href="#FigureWithCaption">Photos</a>&nbsp;|&nbsp;<a href="#Quote">Famous Quote</a>&nbsp;|&nbsp;<a href="#Video">video</a>&nbsp;|&nbsp;<a href="#Resources">Resources</a>&nbsp;|&nbsp;<a href="#Contact Me">Contact Form</a>
         </header>
 
 <!-- Main content --> 
 
-        <main>
+        <main id="Main" class="main-section">
 
 <!-- This section contains a paragraph about the biography of Charles Darwin in a block quote -->  
 
@@ -43,42 +47,40 @@
 
 <!-- This section contains a photo of Charles Darwin -->
 
-            <section id="Figure with Caption">
-                
-                <h2>Photos</h2>
- 
+            <section id="FigureWithCaption">
+                 
                 <figure>
-                    <img src="images/Charles_Darwin.jpg" height ="450" alt="A side profile image of charles darwin in his later"> 
-                    <figcaption> A picture of Charles Darwin in his later years. </figcaption>
+                    <img src="images/Charles_Darwin.jpg" width="300" alt="A side profile image of charles darwin in his later"> 
+                    <figcaption> Charles Darwin in his later years. </figcaption>
                 </figure>
             </section>
 
 <!-- This section contains a famous Charles Darwin quote -->
 
-            <section id="Quote">
+            <section id="Quote" class="QuoteSection">
                 
                 <h2>Famous Quote</h2>
-                <p><q>Although much remains obscure, and will long remain obscure, ... I am convinced that Natural Selection has been the main but not exclusive means of modification.</q></p>
+                <p><q cite="https://www.yourdictionary.com/articles/charles-darwin-quotes-life-contemplate">Although much remains obscure, and will long remain obscure, ... I am convinced that Natural Selection has been the main but not exclusive means of modification.</q></p>
                 <cite><strong>- Charles Darwin</strong></cite>            
             </section>
 
 <!-- This section contains a video about Charles Darwin embedded from youtube -->
 
-            <section id="Video">
+            <section id="Video" class="youtubevideo">
                 
                 <h2>Who was Charles Darwin?</h2>
                 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-NFfSLlCawE?si=eBCjECcTTpgDM5sy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Embedded video titled who was charles darwin?"></iframe>
+                <iframe width="775" height="436" src="https://www.youtube.com/embed/-NFfSLlCawE?si=eBCjECcTTpgDM5sy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Embedded video titled who was charles darwin?"></iframe>
             
             </section>
         </main>
 
 <!-- Starting aside section to separate form and links from main content -->  
-
-        <aside>
+        <p></p>
+        <aside id="Aside">
 
 <!-- This section contains links to resources that will open in another tab --> 
-           
+            
             <section id="Resources">
                 
                 <h3>Resources</h3>
@@ -95,53 +97,54 @@
                 
                 <h3>Contact Me</h3>
                     
-                <fieldset>
-                    <legend><strong>Form</strong></legend>    
-                    <form>
+   
+                <form>
 <!-- Input fields for name and email -->
-                        <div>
-                            <label for="name" class="form-label"><strong>Name:</strong></label> <input type="text" required placeholder="name" id ="name" name="username">
-                            <label for="email" class="form-label"><strong>e-mail:</strong></label> <input type="email" required placeholder="e-mail" id ="email">
-                        </div>
+                    <div>
+                        <label for="name" class="form-label"><strong>Full Name:</strong></label> 
+                        <input type="text" required placeholder="name" id ="name" name="username">
+                        <p></p>
+                        <label for="email" class="form-label"><strong>e-mail:</strong></label>  
+                        <input type="email" required placeholder="e-mail" id ="email">
+                        <p></p>
+                    </div>
 
 <!-- Text area for message -->
 
+                    
+                    <div>
+                        <label for="textarea" class="form-label"><strong>Enter Text:</strong></label>
+                        <textarea name="message" rows="10" id="textarea" class="form-control" required placeholder="Your message here"></textarea>   
                         <p></p>
-                        <div>
-                            <label for="textarea" class="form-label"><strong>Enter Text:</strong></label>
-                            <p></p>
-                            <textarea name="message" cols="60" rows="10" id="textarea" class="form-control" required placeholder="Your message here"></textarea>   
-                        </div>
+                    </div>
 
 <!-- Drop down list containing reasons for submitting the form -->
 
-                        <div>
-                            <p></p> 
-                            <label for="dropdownlist" class="form-label"><strong>Select an option</strong></label>
-                            <p></p>
-                            <select name="dropdown list" id="dropdownlist" class="form-control" required>
-                                <option value="Complaint">Complaint</option>
-                                <option value="Other">Other</option>
-                                <option value="Suggestion" selected>Suggestion</option>
-                            </select>
-                        </div>
+                    <div>
+                         
+                        <label for="dropdownlist" class="form-label"><strong>Message Type</strong></label>
+                        <select name="dropdown list" id="dropdownlist" class="form-control" required>
+                            <option value="Complaint">Complaint</option>
+                            <option value="Other">Other</option>
+                            <option value="Suggestion" selected>Suggestion</option>
+                        </select>
+                    </div>
 
 <!-- The button to submit the form once done -->
 
-                        <div>
-                            <p></p>
-                            <label for="submit" class="form-label"><strong>Click here when finished!</strong></label>
-                            <p></p>
-                            <input type="submit" value="submit" id="submit" class="form-control"  autofocus>
-                        </div>
+                    <div>
+                        <p></p>
+                        <label for="submit" class="form-label"><strong>Click here when finished!</strong></label>
+                        <input type="submit" value="submit" id="submit" class="form-control" autofocus>
+                    </div>
 
-                    </form>   
-                </fieldset>
+                </form>   
+
             </section>
         </aside>    
 
 <!-- creating footer section separate from main and aside sections -->        
-        <footer>
+        <footer id="Footer">
 
 <!-- copyright message -->
  
