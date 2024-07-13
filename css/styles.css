@@ -206,4 +206,24 @@ ul {
         text-align: center;
         font-size: .8em;
     }
+    #Biography {
+        box-sizing: border-box;
+         
+    }
+    
+    #FigureWithCaption{
+        box-sizing: border-box;
+        font-weight: bold;
+        font: normal normal bold 1rem 'helvetica', 'Calibri', 'sans-serif';
+    }
+    
+    #Quote {
+        max-width: 96.5%;
+        clear: both;
+        border: .25rem solid black;
+        border-radius: 1rem;
+        box-shadow: .25rem .25rem .25rem rgba(68, 17, 17, 0.863);
+        text-align: center;
+        background-image: linear-gradient(to bottom, bisque 10%, rgb(230, 176, 112) 90%);
+    }
 }
