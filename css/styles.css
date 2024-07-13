@@ -68,7 +68,7 @@ header {
 }
 
 #Quote {
-    max-width: 95%;
+    max-width: 96.5%;
     clear: both;
     border: .25rem solid black;
     border-radius: 1rem;
@@ -76,6 +76,7 @@ header {
     text-align: center;
     background-image: linear-gradient(to bottom, bisque 10%, rgb(230, 176, 112) 90%);
 }
+
 a:visited{
     color:rgb(255, 195, 67);
 }
@@ -160,4 +161,49 @@ iframe {
 ul {
     line-height: 1.5;
     list-style-type: none;
+}
+
+@media (max-width: 1080px) {
+    body{
+        width: 100%;
+        max-width: 1080px;
+        padding: 1rem;
+        margin: auto;
+        border: .25rem solid black;
+        border-radius: 1rem;
+        background-color: bisque;
+        font-size: .90rem;
+        box-sizing: border-box;
+    }
+    
+    header {
+        text-align: center;
+        border: .25rem solid black;
+        border-radius: 1rem;
+        background-color:brown;
+        box-sizing: border-box;
+    }
+    
+    #Main {
+        box-sizing: border-box;
+    }
+    
+    #Aside {
+        padding: 1rem;
+        border: .25rem solid black;
+        border-radius: 1rem;
+        background-color:brown;
+        box-sizing: border-box;
+    }
+    
+    #Footer {
+        clear: both;
+        padding: 1rem;
+        border: 0.25rem solid black;
+        border-radius: 1rem;
+        background-color:brown;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: .8em;
+    }
 }
