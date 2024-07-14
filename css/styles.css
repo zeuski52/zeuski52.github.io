@@ -227,7 +227,7 @@ ul {
         background-image: linear-gradient(to bottom, bisque 10%, rgb(230, 176, 112) 90%);
     }
 
-    section{
+    .youtubevideo{
         position: relative;
         width: 100%;
         max-width: 775px;
