@@ -5,7 +5,7 @@ html {
     /* Using shorthand method and all 6 properties to set font size */
     font: normal normal normal 500 20px/1.25 Helvetica, Arial, sans-serif;   
 
-    /* Setting a background color */
+    /* Setting a background color for root element */
     background-color:rgb(126, 93, 52);
 }
 
@@ -24,6 +24,8 @@ body{
 
 /* Header section styling */
 header {
+    padding: 1rem;
+    margin: auto;
     text-align: center;
     border: .25rem solid black;
     border-radius: 1rem;
@@ -31,7 +33,7 @@ header {
     box-sizing: border-box;
 }
 
-/* Using ID selectors to make main and aside 70/30 side by side, box-sizing ensures padding and border are included in totale width */
+/* Using ID selectors to make main and aside 70/30 side by side, box-sizing ensures padding and border are included in total width of the element */
 #Main {
     float: left;
     width: 70%;   
@@ -41,6 +43,7 @@ header {
 #Aside {
     float: left;
     width: 30%;
+    margin: auto;
     padding: 1rem;
     border: .25rem solid black;
     border-radius: 1rem;
@@ -51,6 +54,7 @@ header {
 /* Adding clear:both property to ensure footer is below both left and right floats */
 #Footer {
     clear: both;
+    margin:auto;
     padding: 1rem;
     border: 0.25rem solid black;
     border-radius: 1rem;
@@ -64,7 +68,9 @@ header {
 /* Adding float to the biography section to split 50/50 */ 
 #Biography {
     float: left;
-    width: 50%;   
+    width: 50%; 
+    padding: .25rem;
+    margin: auto;  
     box-sizing: border-box;    
 }
 
@@ -72,6 +78,8 @@ header {
 #FigureWithCaption{
     float: left;
     width: 50%;
+    padding: .25rem;
+    margin: auto;
     box-sizing: border-box;
     font-weight: bold;
     font: normal normal bold .75rem 'helvetica', 'Calibri', 'sans-serif';
@@ -79,6 +87,8 @@ header {
 
 /* Using Class selector for setting box shadow and gradient background for the quote section, adding clear:both to ensure section displays below floats */
 .QuoteSection {
+    padding: .25rem;
+    margin: 1rem;
     max-width: 96.5%;
     clear: both;
     border: .25rem solid black;
@@ -88,7 +98,7 @@ header {
     background-image: linear-gradient(to bottom, bisque 10%, rgb(230, 176, 112) 90%);
 }
 
-/* Adjusting the paragraph width for the blockquote to look better with the new layout */
+/* Adjusting the paragraph width for the biography to look better with the new layout */
 blockquote{
     width: 90%;
 }
@@ -189,7 +199,7 @@ ul {
     list-style-type: none;
 }
 
-/* @media query for Samsung S22 device with a width of 1080px */
+/* @media query for a Samsung S22 or any other mobile device with a resolution width of 1080px */
 @media (max-width: 1080px) {
     
     /* Setting font size lower for mobile */
@@ -236,7 +246,6 @@ ul {
     }
     
     #Footer {
-
         padding: 1rem;
         border: 0.25rem solid black;
         border-radius: 1rem;
@@ -245,6 +254,7 @@ ul {
         text-align: center;
         font-size: .8em;
     }
+    
     #Biography {
         float: none;
         width: 100%;
@@ -253,9 +263,18 @@ ul {
     
     #FigureWithCaption{
         float: none;
-        width: 89%;
+        width: 100%;
         box-sizing: border-box;
         font: normal normal bold 1rem 'helvetica', 'Calibri', 'sans-serif';
+    }
+
+    figure {
+        border: .25rem solid black;
+        border-radius: 1rem;
+        padding: .25rem;
+        text-align: center;
+        width: 80.5%;
+        background-color:brown;
     }
     
     .QuoteSection {
@@ -276,14 +295,14 @@ ul {
 
     /* Using a class selector, allows youtubevideo section to scale dynamically along with iframe element selector */
     .youtubevideo{ 
-        /* Allows iframe to be positioned within youtubevideo section */
+        /* Allows iframe to be positioned within .youtubevideo section */
         position: relative; 
         width: 100%; 
         
         /* Setting max width for the container based off the videos width */
         max-width: 775px; 
         
-        /* padding-top sets to 21:9 aspect */ 
+        /* padding-top keeps 21:9 aspect */ 
         padding-top: 56.25%; 
         
         /* Height is set to 0 because it's being set by padding-top */
