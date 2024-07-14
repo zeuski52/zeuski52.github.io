@@ -218,15 +218,13 @@ ul {
     
     #FigureWithCaption{
         float: none;
-        width: 100%;
+        width: 90%;
         box-sizing: border-box;
-        font-weight: bold;
         font: normal normal bold 1rem 'helvetica', 'Calibri', 'sans-serif';
     }
     
     #Quote {
         max-width: 96.5%;
-
         border: .25rem solid black;
         border-radius: 1rem;
         box-shadow: .25rem .25rem .25rem rgba(68, 17, 17, 0.863);
