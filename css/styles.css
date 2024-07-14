@@ -1,9 +1,15 @@
 /* Chris Szabla 9001341 */ 
+
+/* Setting style in root element */
 html {
-    font: normal normal 500 20px/1.25 Helvetica, Arial, sans-serif;   
+    /* Using shorthand method and all 6 properties to set font size */
+    font: normal normal normal 500 20px/1.25 Helvetica, Arial, sans-serif;   
+
+    /* Setting a background color */
     background-color:rgb(126, 93, 52);
 }
 
+/* Setting style for the body of the page including absolute unit for the max width */
 body{
     width: 100%;
     max-width: 1200px;
@@ -16,6 +22,7 @@ body{
     box-sizing: border-box;
 }
 
+/* Header section styling */
 header {
     text-align: center;
     border: .25rem solid black;
@@ -24,6 +31,7 @@ header {
     box-sizing: border-box;
 }
 
+/* Using ID selectors to make main and aside 70/30 side by side, box-sizing ensures padding and border are included in totale width */
 #Main {
     float: left;
     width: 70%;   
@@ -40,6 +48,7 @@ header {
     box-sizing: border-box;
 }
 
+/* Adding clear:both property to ensure footer is below both left and right floats */
 #Footer {
     clear: both;
     padding: 1rem;
@@ -52,22 +61,24 @@ header {
     
 }
 
+/* Adding float to the biography section to split 50/50 */ 
 #Biography {
     float: left;
     width: 50%;   
-    box-sizing: border-box;
-     
+    box-sizing: border-box;    
 }
 
+/* Adding float to the figcaption section to split 50/50 */
 #FigureWithCaption{
     float: left;
     width: 50%;
     box-sizing: border-box;
     font-weight: bold;
-    font: normal normal bold 1rem 'helvetica', 'Calibri', 'sans-serif';
+    font: normal normal bold .75rem 'helvetica', 'Calibri', 'sans-serif';
 }
 
-#Quote {
+/* Using Class selector for setting box shadow and gradient background for the quote section, adding clear:both to ensure section displays below floats */
+.QuoteSection {
     max-width: 96.5%;
     clear: both;
     border: .25rem solid black;
@@ -77,6 +88,12 @@ header {
     background-image: linear-gradient(to bottom, bisque 10%, rgb(230, 176, 112) 90%);
 }
 
+/* Adjusting the paragraph width for the blockquote to look better with the new layout */
+blockquote{
+    width: 90%;
+}
+
+/* Setting link styling */
 a:visited{
     color:rgb(255, 195, 67);
 }
@@ -90,16 +107,31 @@ a:hover {
     color: black;
 }
 
+/* Form Styling - labels */
 label {
     font: small-caps normal 400 .85rem 'helvetica', 'Calibri', 'sans-serif';
     Color: rgb(255, 195, 67);
     text-align: left;
 }
 
+/* Form styling input controls- Text Areas */
 textarea[required][placeholder], label[required][placeholder]{
     font-weight: 100;
 }
 
+/* Form styling input controls - Text Area, input and select */
+textarea, input, select {
+    background-color: rgb(233, 225, 225);
+    width:95%;
+    align-items: left;
+}
+
+/* Form styling input controls - setting height for textbox */
+textarea {
+    height: 10rem;
+}
+
+/* Styling for figure element, including background color */
 figure {
     border: .25rem solid black;
     border-radius: 1rem;
@@ -109,28 +141,18 @@ figure {
     background-color:brown;
 }
 
+/* Styling of image when child of figure */
 figure > img{
     border: .25rem solid black;
     border-radius: 5%;
 }
 
-figure > figcaption {
-    font-size: .75rem;   
-}
-
+/* Adding font styling to the q element. Border, box shadow and the rest of the styling is applied in .QuoteSection above */
 q {
     font: normal italic normal 1em/1.25 Helvetica, Arial, sans-serif;
 }
 
-textarea, input, select {
-    background-color: rgb(233, 225, 225);
-    width:95%;
-    align-items: left;
-}
-
-textarea {
-    height: 10rem;
-}
+/* Header styling, increased font size, font-variant, style, weight, family and color for all heading elements */
 h1 {
     text-align: center;
     font: small-caps normal bold 3em/1.25 'helvetica', 'Calibri', 'sans-serif';
@@ -149,21 +171,33 @@ h3 {
     color: rgb(255, 195, 67);
 }
 
+/* Setting line height in aside using descendant selector */
 aside section {
     line-height: 1rem;
 }
 
+/* Setting border and rounded corners around video frame */
 iframe {
     border: .25rem solid black;
     border-radius: 1rem;  
 }
 
+/* Styling for unorder lists to remove bullets and increase line height*/
 ul {
     line-height: 1.5;
     list-style-type: none;
 }
 
+/* @media query for Samsung S22 device with a width of 1080px */
 @media (max-width: 1080px) {
+    
+    /* Setting font size lower for mobile */
+    html {
+        font: normal normal normal 500 16px/1.25 Helvetica, Arial, sans-serif;   
+    }
+    
+    /* Removed all floats and clears so the following sections display better vertically */ 
+    /* Body, header, #Main, #Aside, #Footer, #Biography, #FigureWithCaption, .QuoteSection */
     body{
         width: 100%;
         max-width: 1080px;
@@ -223,7 +257,7 @@ ul {
         font: normal normal bold 1rem 'helvetica', 'Calibri', 'sans-serif';
     }
     
-    #Quote {
+    .QuoteSection {
         max-width: 96.5%;
         border: .25rem solid black;
         border-radius: 1rem;
@@ -232,20 +266,40 @@ ul {
         background-image: linear-gradient(to bottom, bisque 10%, rgb(230, 176, 112) 90%);
     }
 
-    .youtubevideo{
-        position: relative;
+    /* Adjusting padding and margin for blockquote to look better on mobile */
+    blockquote{
+        padding:0;
+        margin:0;
         width: 100%;
-        max-width: 775px;
-        padding-top: 56.25%;
-        height: 0;
-        overflow: hidden;
+    }
+
+    /* Using a class selector, allows youtubevideo section to scale dynamically along with iframe element selector */
+    .youtubevideo{ 
+        /* Allows iframe to be positioned within youtubevideo section */
+        position: relative; 
+        width: 100%; 
+        
+        /* Setting max width for the container based off the videos width */
+        max-width: 775px; 
+        
+        /* padding-top sets to 21:9 aspect */ 
+        padding-top: 56.25%; 
+        
+        /* Height is set to 0 because it's being set by padding-top */
+        height: 0; 
+        
+        /* Any content that overflows is hidden */
+        overflow: hidden; 
     }
 
     iframe {
-        position: absolute;
-        top: 0;
+        /* Position iframe within section */
+        position: absolute; 
+        
+        /* Scaling starts from top left corner */
+        top: 0; 
         left: 0;
-        width: 100%;
+        width: 100%; 
         height: 100%;
         border: 0;
     }
