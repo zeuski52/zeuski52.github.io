@@ -137,8 +137,9 @@ figure {
     border-radius: 1rem;
     padding: .25rem;
     text-align: center;
-    width: 77%;
+    width: 80.5%;
     background-color:brown;
+    
 }
 
 /* Styling of image when child of figure */
@@ -252,7 +253,7 @@ ul {
     
     #FigureWithCaption{
         float: none;
-        width: 90%;
+        width: 89%;
         box-sizing: border-box;
         font: normal normal bold 1rem 'helvetica', 'Calibri', 'sans-serif';
     }
