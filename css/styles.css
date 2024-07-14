@@ -185,10 +185,14 @@ ul {
     }
     
     #Main {
+        float: none;
+        width: 100%;
         box-sizing: border-box;
     }
     
     #Aside {
+        float: none;
+        width: 100%;
         padding: 1rem;
         border: .25rem solid black;
         border-radius: 1rem;
@@ -207,11 +211,14 @@ ul {
         font-size: .8em;
     }
     #Biography {
+        float: none;
+        width: 100%;
         box-sizing: border-box;
-         
     }
     
     #FigureWithCaption{
+        float: none;
+        width: 100%;
         box-sizing: border-box;
         font-weight: bold;
         font: normal normal bold 1rem 'helvetica', 'Calibri', 'sans-serif';
