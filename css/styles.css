@@ -302,7 +302,7 @@ ul {
         /* Setting max width for the container based off the videos width */
         max-width: 775px; 
         
-        /* padding-top keeps 21:9 aspect */ 
+        /* padding-top keeps 16:9 aspect */ 
         padding-top: 56.25%; 
         
         /* Height is set to 0 because it's being set by padding-top */
