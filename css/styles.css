@@ -9,7 +9,7 @@ html {
     background-color:rgb(126, 93, 52);
 }
 
-/* Setting style for the body of the page including absolute unit for the max width */
+/* Setting style for the body of the page including absolute unit for the max width */ 
 body{
     width: 100%;
     max-width: 1200px;
