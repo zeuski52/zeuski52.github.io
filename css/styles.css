@@ -29,7 +29,7 @@ header {
     text-align: center;
     border: .25rem solid black;
     border-radius: 1rem;
-    background-color:brown;
+    background-color:#ec3535;
     box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@ header {
     padding: 1rem;
     border: .25rem solid black;
     border-radius: 1rem;
-    background-color:brown;
+    background-color:#ec3535;
     box-sizing: border-box;
 }
 
@@ -58,7 +58,7 @@ header {
     padding: 1rem;
     border: 0.25rem solid black;
     border-radius: 1rem;
-    background-color:brown;
+    background-color:#ec3535;
     margin-top: 1rem;
     text-align: center;
     font-size: .8em;
@@ -80,7 +80,7 @@ header {
     width: 50%;
     padding: .25rem;
     margin: auto;
-    box-sizing: border-box;
+    box-sizing:border-box;
     font-weight: bold;
     font: normal normal bold .75rem 'helvetica', 'Calibri', 'sans-serif';
 }
@@ -105,7 +105,7 @@ blockquote{
 
 /* Setting link styling */
 a:visited{
-    color:rgb(255, 195, 67);
+    color:rgb(0, 0, 0);
 }
 
 a:link {
@@ -120,7 +120,7 @@ a:hover {
 /* Form Styling - labels */
 label {
     font: small-caps normal 400 .85rem 'helvetica', 'Calibri', 'sans-serif';
-    Color: rgb(255, 195, 67);
+    Color: rgb(0, 0, 0);
     text-align: left;
 }
 
@@ -148,7 +148,7 @@ figure {
     padding: .25rem;
     text-align: center;
     width: 80.5%;
-    background-color:brown;
+    background-color:#ec3535;
     
 }
 
@@ -167,19 +167,19 @@ q {
 h1 {
     text-align: center;
     font: small-caps normal bold 3em/1.25 'helvetica', 'Calibri', 'sans-serif';
-    color: rgb(255, 195, 67);
+    color: rgb(255, 234, 67);
 }
 
 h2 {
     text-align: center;
     font: small-caps normal bold 1.5em/1.25 'helvetica', 'Calibri', 'sans-serif';
-    color:brown;
+    color:#ec3535;
 }
 
 h3 {
     text-align: center;
     font: small-caps normal bold 1.5em/1.25 'helvetica', 'Calibri', 'sans-serif';
-    color: rgb(255, 195, 67);
+    color: rgb(255, 234, 67);
 }
 
 /* Setting line height in aside using descendant selector */
@@ -225,7 +225,7 @@ ul {
         text-align: center;
         border: .25rem solid black;
         border-radius: 1rem;
-        background-color:brown;
+        background-color:#ec3535;
         box-sizing: border-box;
     }
     
@@ -241,7 +241,7 @@ ul {
         padding: 1rem;
         border: .25rem solid black;
         border-radius: 1rem;
-        background-color:brown;
+        background-color:#ec3535;
         box-sizing: border-box;
     }
     
@@ -249,7 +249,7 @@ ul {
         padding: 1rem;
         border: 0.25rem solid black;
         border-radius: 1rem;
-        background-color:brown;
+        background-color:#ec3535;
         margin-top: 1rem;
         text-align: center;
         font-size: .8em;
@@ -274,7 +274,7 @@ ul {
         padding: .25rem;
         text-align: center;
         width: 70%;
-        background-color:brown;
+        background-color:#ec3535;
     }
     
     .QuoteSection {
