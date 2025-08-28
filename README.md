@@ -26,13 +26,14 @@ If using GitHub Pages:
 3. Your site will be live at `https://<username>.github.io/static-sites-darwin`.  
 
 ## Project Structure
+```
 ├─ index.html
 ├─ css/
 │  ├─ normalize.css
 │  └─ styles.css
 ├─ images/
 │  └─ Charles_Darwin.jpg
-
+```
 ## Example Screenshot
 ![Screenshot of site layout](images/Charles_Darwin_Screenshot.png)
 
